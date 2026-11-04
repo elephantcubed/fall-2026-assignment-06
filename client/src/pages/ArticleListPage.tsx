@@ -10,7 +10,6 @@ export default function ArticleListPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
-  // Re-fetch from the API whenever the search text changes (debounced).
   useEffect(() => {
     let cancelled = false;
     setLoading(true);
